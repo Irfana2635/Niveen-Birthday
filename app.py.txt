@@ -1,0 +1,28 @@
+import streamlit as st
+
+# Page config
+st.set_page_config(page_title="Happy Birthday 💙", layout="centered")
+
+# Blue theme styling
+st.markdown("""
+    <style>
+    .stApp {
+        background: linear-gradient(135deg, #0a1f44, #1e90ff);
+        color: white;
+        text-align: center;
+    }
+    h1 {
+        font-size: 60px;
+        animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+        from { text-shadow: 0 0 10px white; }
+        to { text-shadow: 0 0 30px #00bfff; }
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Content
+st.markdown("<h1>🎉 Happy Birthday 💙</h1>", unsafe_allow_html=True)
+st.markdown("<h2>🎂 Stay Blessed 🎈</h2>", unsafe_allow_html=True)
+st.markdown("✨ Have an amazing day! ✨")
